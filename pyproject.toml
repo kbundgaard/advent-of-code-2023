@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "advent-of-code"
+version = "0.1.0"
+description = "Just my attempts at solving the Advent of Code 2023 challenges"
+authors = []
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.11.0"
+pre-commit = "^3.5.0"
+pylint = "^3.0.2"
+reorder-python-imports = "^3.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
