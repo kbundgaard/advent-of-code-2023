@@ -5,7 +5,7 @@ from advent_of_code import day5
 
 
 class Day5Test(TestCase):
-    """Day 2 test class"""
+    """Day 5 test class"""
 
     def setUp(self):
         self.initial, self.order, self.mappings = day5.get_data()

@@ -5,7 +5,7 @@ from advent_of_code import day3
 
 
 class Day3Test(TestCase):
-    """Day 2 test class"""
+    """Day 3 test class"""
 
     def setUp(self):
         self.data, self.parts = day3.get_data()
