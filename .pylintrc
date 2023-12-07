@@ -1,2 +1,2 @@
 [MESSAGES CONTROL]
-disable=duplicate-code
+disable=duplicate-code,too-few-public-methods
