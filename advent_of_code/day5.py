@@ -3,6 +3,7 @@
 import re
 from typing import Dict
 from typing import List
+from typing import Tuple
 
 from advent_of_code.lib import file
 
@@ -90,7 +91,7 @@ def part2(
     return min(location[0] for location in destination)
 
 
-def get_data() -> (List[int], List[str], Dict[str, List[List[int]]]):
+def get_data() -> Tuple[List[int], List[str], Dict[str, List[List[int]]]]:
     """Get the data from file and some initial processing"""
     data = file.import_file("puzzles/day5.txt")
     initial, order, mappings = parse_data(data)
@@ -99,9 +100,9 @@ def get_data() -> (List[int], List[str], Dict[str, List[List[int]]]):
 
 def main() -> None:
     """Run the solver"""
-    initial, order, mappings = get_data()
-    print(f"Part 1 Answer: {part1(initial, order, mappings)}")
-    print(f"Part 2 Answer: {part2(initial, order, mappings)}")
+    data = get_data()
+    print(f"Part 1 Answer: {part1(data[0], data[1], data[2])}")
+    print(f"Part 2 Answer: {part2(data[0], data[1], data[2])}")
 
 
 if __name__ == "__main__":

@@ -3,6 +3,7 @@
 import re
 from typing import Dict
 from typing import List
+from typing import Tuple
 
 from advent_of_code.lib import file
 
@@ -88,7 +89,7 @@ def part2(data: List[str], parts: List[Dict[int, str]]) -> int:
     return answer
 
 
-def get_data() -> (List[str], List[Dict[int, str]]):
+def get_data() -> Tuple[List[str], List[Dict[int, str]]]:
     """Get the data from file and some initial processing"""
     data = file.import_file("puzzles/day3.txt")
     digits = re.compile(r"\d+")
@@ -101,9 +102,9 @@ def get_data() -> (List[str], List[Dict[int, str]]):
 
 def main() -> None:
     """Run the solver"""
-    data, parts = get_data()
-    print(f"Part 1 Answer: {part1(data, parts)}")
-    print(f"Part 2 Answer: {part2(data, parts)}")
+    data = get_data()
+    print(f"Part 1 Answer: {part1(data[0], data[1])}")
+    print(f"Part 2 Answer: {part2(data[0], data[1])}")
 
 
 if __name__ == "__main__":
