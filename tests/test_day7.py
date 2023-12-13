@@ -12,13 +12,13 @@ def data() -> List[str]:
     return day7.get_data()
 
 
-def test_day7_part1(data: List[str]):
+def test_day7_part1(data: List[str]) -> None:
     """Test the first solution"""
     result = day7.part1(data)
     assert result == 246424613
 
 
-def test_day7_part2(data: List[str]):
+def test_day7_part2(data: List[str]) -> None:
     """Test the second solution"""
     result = day7.part2(data)
     assert result == 248256639

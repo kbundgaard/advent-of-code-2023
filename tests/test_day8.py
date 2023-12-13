@@ -14,13 +14,13 @@ def data() -> Tuple[List[int], Dict[str, Tuple[str, str]]]:
     return day8.get_data()
 
 
-def test_day8_part1(data: Tuple[List[int], Dict[str, Tuple[str, str]]]):
+def test_day8_part1(data: Tuple[List[int], Dict[str, Tuple[str, str]]]) -> None:
     """Test the first solution"""
     result = day8.part1(data[0], data[1])
     assert result == 16531
 
 
-def test_day8_part2(data: Tuple[List[int], Dict[str, Tuple[str, str]]]):
+def test_day8_part2(data: Tuple[List[int], Dict[str, Tuple[str, str]]]) -> None:
     """Test the second solution"""
     result = day8.part2(data[0], data[1])
     assert result == 24035773251517
